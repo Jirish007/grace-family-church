@@ -83,12 +83,13 @@
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Get in Touch or Ask a Question</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="How can we help?" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+     <form id="contactForm" method="POST" action="submit.php">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="question..."></textarea>
+        <button type="submit" class="btn">Message</button>
       </form>
+      <div id="formMessage" style="margin-top: 1rem; color: red;"></div>
     </div>
   </section>
 
